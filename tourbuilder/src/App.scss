@@ -1,0 +1,58 @@
+@use "sass:color";
+
+body {
+	height: 100vh;
+	margin: 0;
+	padding: 0 5vw;
+
+	font-family: Helvetica, sans-serif;
+}
+
+#root {
+	// make sure root element fills out the whole body
+	height: 100%;
+
+	// flex along vertical axis
+	display: flex;
+	flex-direction: column;
+
+	// align children to start of horizontal axis
+	align-items: start;
+}
+
+.logo {
+	// constrain the height, since SVGs will take up everything if you don't tell them otherwise
+	height: 7.5vh;
+
+	// give it a little breathing room
+	margin: 0.5%;
+}
+
+.visits-view {
+	border: 1px black solid;
+	background-color: color.scale(lightblue, $lightness: 80%);
+
+	// grow to use all remaining height from parent (#root)
+	flex-grow: 1;
+
+	// fill out all available width
+	width: 100%;
+
+	// center inner container
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.range-selector {
+	h1 {
+		margin: 0.5% 0;
+	}
+
+	margin-bottom: 2%;
+}
+
+#interval {
+	font-size: 1.25em;
+	padding: 1%;
+}
