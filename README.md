@@ -1,5 +1,7 @@
 # LCP360 Coding Assignment
 
+![image](https://user-images.githubusercontent.com/11001606/152079498-dfe519e5-cb6d-4fb7-9b7b-2e55bd5be296.png)
+
 ## Installation
 Run `npm install` in both child folders to install all required dependencies.
 
